@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+ 
+.navbar{
+    height: 70px;
+    background-color: #4379F2;
+    color: #FFEB00;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    height: 70px;
+    width: 300px;
+
+}
+
+.logo{
+    background-image: url("../image/logo-f.png");
+    background-size: cover;
+    height: 70px;
+    width: 300px;
+
+}
+
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 2px solid white;
+}
+
+/** box2 **/
+
+
+
+/** box3**/
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 620px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgba(31, 81, 161, 0.685);
+
+}
+
+/** box4 **/
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/** box5 **/ 
+.nav-cart i {
+    font-size: 30px;
+
+}
+
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/** panal **/
+
+.panal{
+    height: 40px;
+    background-color: #6EC207;
+    display: flex;
+    color: #117554;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panal-ops a {
+    display: inline;
+    margin-left: 15px;
+}
+
+.panal-ops{
+    width: 70%;
+    font-weight: 700;
+}
+
+.panal-deals{
+    font-size: 0.85;
+    font-weight: 700;
+}
+ 
+#main{
+    height: 1000vh;
+    width: 100%;
+    position: absolute;
+
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: blanchedalmond;
+   
+}
+
+
+#cursor{
+    height: 8vw;
+    width: 8vw;
+    background-color: rgb(30, 0, 255);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+
+}
+
+#cursor h5 {
+font-size: 1.25vw;
+font-weight: 500;
+}
+
+#page1 video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+
+}
+
+#page1-content {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    position: relative;
+    z-index: 2;
+    color: #fff;
+
+}
+
+nav {
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+    padding: 2vw 3vw;
+
+}
+
+#page1-content h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24vh;
+    line-height: 600%;
+    
+        
+}
+
+#page1-content h1 span{
+   font-size: 24vh;
+}
+
+/* *************  Page2  *************** */
+
+
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+  }
+  
+  .slider {
+    display: flex;
+    gap: 10px;
+    animation: scroll 10s linear infinite;
+  }
+  
+  .card {
+    min-width: 300px;
+    height: 300px;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+/* **************************************************************************** */
+  #slider {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #333;
+    position: relative;
+  }
+
+  /* Slider Wrapper */
+  #slider-wrapper {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+  }
+
+  /* Individual Slide */
+  #slide {
+    width: 100%;
+    flex: 1;
+    min-width: 100%;
+    transition: 0.5s;
+  }
+
+  /* Keyframes for automatic sliding */
+  @keyframes slide {
+    0%, 33% { transform: translateX(0); }
+    34%, 66% { transform: translateX(-100%); }
+    67%, 100% { transform: translateX(-200%); }
+  }
+  
+  /* Slide Content */
+  #slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+
+
+
+
+/* *************************    Footer   ***************************** */
+footer {
+    background-image: url('../image/campus.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Footer Overlay */
+  footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  /* Footer Content */
+  .footer-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Logo */
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-logo img {
+    width: 250px;
+    height: auto;
+  }
+
+  /* Contact Info */
+  .footer-contact {
+    margin-bottom: 20px;
+  }
+
+  .footer-contact p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  /* Footer Links */
+  .footer-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-links a {
+    color: #f2c94c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  /* Social Media Icons */
+  .footer-social {
+    display: flex;
+    gap: 15px;
+  }
+
+  .footer-social a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+
+  .footer-social a:hover {
+    color: #f2c94c;
+  }
+
+  /* Footer Copyright */
+  .footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+  }
